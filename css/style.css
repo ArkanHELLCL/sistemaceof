@@ -21,6 +21,9 @@ html,body{
   background: #4158d0;
   color: #fff;
 }
+.wrapper.recordar{
+  width: 500px;
+}
 .wrapper{
   width: 380px;
   background: #fff;

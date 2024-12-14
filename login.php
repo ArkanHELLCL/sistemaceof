@@ -21,18 +21,18 @@
         <form action="InicioSesion/InicioSesion.php" method="POST">
             <div class="field">
                 <input type="text" required name="username">
-                <label>Correo</label>
+                <label>Usuario</label>
             </div>
             <div class="field">
                 <input type="password" required name="password">
-                <label>Contrasena</label>
+                <label>Clave</label>
             </div>
             <div class="content">
                 <div class="checkbox">
                     <input type="checkbox" id="remember-me">
                     <label for="remember-me">Recordar</label>
                 </div>
-                <div class="pass-link"><a href="#">Olvido su contrasena?</a></div>
+                <div class="pass-link"><a href="RecordarContrasena.php">Olvido su contrasena?</a></div>
             </div>
             <div class="field">
                 <input type="submit" value="Ingresar">
