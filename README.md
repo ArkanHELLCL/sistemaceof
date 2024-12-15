@@ -14,6 +14,11 @@ Para instalar y configurar el proyecto, sigue estos pasos:
     ```sh
     cd tu-repositorio
     ```
+2. Levanta el proyecto con vscode:
+    ```sh
+    code .
+    ```
+    o con tu ide favorita
 
 ### 2024
 ### **Diciembre**
