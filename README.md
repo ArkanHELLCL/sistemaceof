@@ -30,4 +30,8 @@ Para instalar y configurar el proyecto, sigue estos pasos:
 4. Manejo de sesiones para proteger rutas.
 5. Creación de un login con conexion a mysql con manejo de session y encriptación de contraseña
 
+**15/12**
+
+1. Creación de procedimientos almacenados en la base de datos
+
 
