@@ -17,7 +17,7 @@ Para instalar y configurar el proyecto, sigue estos pasos:
 
 ### 2024
 ### **Diciembre**
-**14/10**
+**14/12**
 
 1. Creación del repositorio, primera versión
 2. Conexion a la base de datos local
