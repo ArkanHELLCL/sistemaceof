@@ -1,5 +1,6 @@
 <?php
     require_once '../config/Conection.php';
+    require_once '../mail/EnviarMail.php';
     session_start();
 
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
