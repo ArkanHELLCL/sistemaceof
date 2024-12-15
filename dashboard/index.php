@@ -5,24 +5,16 @@
     if (!isset($_SESSION['username'])) {
         header('Location: ../login.php');
         exit;
-    }
-
-    // Verifica el rol del usuario
-    /**/
-    if ($_SESSION['per_id'] === 1) {
-        $web = 'Dashboard CEOF - Administrador';
-        $title = 'Administrador';
-
-    }
-    if ($_SESSION['per_id'] === 3) {
-        $web = 'Dashboard CEOF - Empresa';
-        $title = 'Empresa';
-    }
+    }    
     if ($_SESSION['per_id'] > 3) {
         echo "Acceso denegado.";
         session_destroy();
         exit;
     }
+
+    $web = 'Dashboard CEOF - '.$_SESSION['per_descripcion'];
+    $title = $_SESSION['per_descripcion'];
+    $empresa = $_SESSION['emp_descripcion'];
 
 ?>
 <!DOCTYPE html>
@@ -155,7 +147,7 @@
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Dashboard</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active"><?php echo $title ?></li>
+                            <li class="breadcrumb-item active"><?php echo $empresa.' - '.$title ?></li>
                         </ol>                                                
                         <div class="row">
                             <div class="col-xl-6">

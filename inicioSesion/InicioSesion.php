@@ -10,7 +10,7 @@
             $connection = new Connection();
             $pdo = $connection->connect();
 
-            $query = "SELECT * FROM usuarios WHERE USR_Usuario = :username";
+            $query = "CALL `ceofdata`.`spUsuarioxLogin_Consular`(:username);";
             $stmt = $pdo->prepare($query);
             $stmt->execute([
                 'username' => $username
@@ -22,6 +22,8 @@
                     $_SESSION['user'] = $user['USR_Id'];
                     $_SESSION['username'] = $user['USR_Usuario'];
                     $_SESSION['per_id'] = $user['PER_Id'];
+                    $_SESSION['per_descripcion'] = $user['PER_Descripcion'];
+                    $_SESSION['emp_descripcion'] = $user['EMP_Descripcion'];
                     
                     header('Location: ../dashboard/index.php');
                     exit();          
