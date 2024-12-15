@@ -36,6 +36,10 @@
         <title><?php echo $web ?></title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="css/styles.css?v.1.2" rel="stylesheet" />
+        <link rel="icon" href="https://sysinfo.cl/ceofconsultores/wp-content/uploads/2024/11/cropped-logo-4-32x32.png" sizes="32x32">
+        <link rel="icon" href="https://sysinfo.cl/ceofconsultores/wp-content/uploads/2024/11/cropped-logo-4-192x192.png" sizes="192x192">
+        <link rel="apple-touch-icon" href="https://sysinfo.cl/ceofconsultores/wp-content/uploads/2024/11/cropped-logo-4-180x180.png">
+        <meta name="msapplication-TileImage" content="https://sysinfo.cl/ceofconsultores/wp-content/uploads/2024/11/cropped-logo-4-270x270.png">
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
