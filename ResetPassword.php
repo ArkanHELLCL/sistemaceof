@@ -21,7 +21,7 @@
         <img src="https://sysinfo.cl/ceofconsultores/wp-content/uploads/2024/12/logo-COLOR-400px.png">
     </div>
     <div class="wrapper recordar">
-        <div class="title">Reenvío de contraseña</div>
+        <div class="title">Nueva contraseña</div>
         <form action="InicioSesion/ResetContrasena.php" method="POST">
             <div class="field">
                 <input type="password" required name="new_password">

@@ -47,5 +47,7 @@ if (isset($_GET['token'])) {
     } else {
         echo "El token es inválido o ha expirado.";
     }
+}else{
+    echo "El token es inválido o ha expirado.";
 }
 ?>
