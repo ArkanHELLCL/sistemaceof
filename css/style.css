@@ -24,11 +24,15 @@ html,body{
 .wrapper.recordar{
   width: 500px;
 }
+.logo{
+  z-index: 1;
+}
 .wrapper{
   width: 380px;
   background: #fff;
   border-radius: 15px;
   box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  z-index: 1;
 }
 .wrapper .title{
   font-size: 35px;
@@ -135,4 +139,75 @@ form .signup-link a{
 form .pass-link a:hover,
 form .signup-link a:hover{
   text-decoration: underline;
+}
+
+
+.fill {
+  height: 100%;
+  left: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.bottom, .fill {
+  bottom: 0;
+}
+
+.banner-bg {
+  overflow: hidden;
+}
+
+#banner-785954574 .banner-bg img {
+  object-position: 0% 54%;
+}
+.has-hover .bg, .has-hover [class*=image-] img {
+  transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+}
+.banner-bg :is(img,picture,video) {
+  height: 100%;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+img {
+  opacity: 1;
+  transition: opacity 1s;
+}
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+img {
+  border-style: none;
+}
+
+#banner-785954574 .overlay {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.overlay {
+  background: linear-gradient(221deg, rgba(68, 72, 136, 0.6455357142857143) 41%, rgba(100, 74, 138, 0.5326505602240896) 53%, rgba(68, 72, 136, 0.865983893557423) 95%);
+}
+.img .caption, .overlay {
+  bottom: 0;
+  position: absolute;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, .15);
+  height: 100%;
+  left: -1px;
+  pointer-events: none;
+  right: -1px;
+  top: 0;
+  transition: transform .3s, opacity .6s;
 }
