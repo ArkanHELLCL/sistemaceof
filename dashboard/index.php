@@ -37,14 +37,13 @@
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>       
+            <button class="btn btn-link btn-sm order-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Brand-->
             <a class="navbar-brand ps-3" href="index.php">
                 <div class="logo">
                     <img src="https://sysinfo.cl/ceofconsultores/wp-content/uploads/2024/12/logo-BLANCO-400px.png">
                 </div>
-            </a>
-            
+            </a>            
             <!-- Navbar-->
             <ul class="navbar-nav ms-auto me-0 me-md-3 my-2 my-md-0 me-lg-4">
                 <li class="nav-item dropdown">
