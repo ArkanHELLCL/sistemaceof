@@ -100,9 +100,9 @@ form .field input:valid ~ label{
   background: #fff;
   transform: translateY(-50%);
   border-top: 1px solid #4158d0;
-  border-left: 1px solid #4158d0;
+  /*border-left: 1px solid #4158d0;*/
   border-radius: 10px;
-  border-right: 1px solid #4158d0;
+  /*border-right: 1px solid #4158d0;*/
   padding: 2px;
 }
 form .content{
