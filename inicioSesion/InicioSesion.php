@@ -11,7 +11,7 @@
             $connection = new Connection();
             $pdo = $connection->connect();
 
-            $query = "CALL `ceofdata`.`spUsuarioxLogin_Consular`(:username);";
+            $query = "CALL `ceofdata`.`spUsuarioxLogin_Consultar`(:username);";
             $stmt = $pdo->prepare($query);
             $stmt->execute([
                 'username' => $username
