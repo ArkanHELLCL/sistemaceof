@@ -34,4 +34,8 @@ Para instalar y configurar el proyecto, sigue estos pasos:
 
 1. Creación de procedimientos almacenados en la base de datos
 
+**16/12**
 
+1. Creación de procedimiento para recupera contraseña con token y tiempo de expiración
+2. Creacion demodulos y paginas para recordar contraseña
+3. Mejoras en estilo de login y dashboard
