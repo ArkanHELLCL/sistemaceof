@@ -13,7 +13,7 @@
     <link rel="icon" href="https://sysinfo.cl/ceofconsultores/wp-content/uploads/2024/11/cropped-logo-4-192x192.png" sizes="192x192">
     <link rel="apple-touch-icon" href="https://sysinfo.cl/ceofconsultores/wp-content/uploads/2024/11/cropped-logo-4-180x180.png">
     <meta name="msapplication-TileImage" content="https://sysinfo.cl/ceofconsultores/wp-content/uploads/2024/11/cropped-logo-4-270x270.png">
-    <title>Sistema CEOF - Recordar Contraseña</title>
+    <title>Sistema CEOF - Resetear Contraseña</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         <img src="https://sysinfo.cl/ceofconsultores/wp-content/uploads/2024/12/logo-COLOR-400px.png">
     </div>
     <div class="wrapper recordar">
-        <div class="title">Reenvio de contraseña</div>
+        <div class="title">Resetear contraseña</div>
         <form action="InicioSesion/RecordarContraseña.php" method="POST">
             <div class="field">
                 <input type="email" required name="username">
