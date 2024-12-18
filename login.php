@@ -43,7 +43,7 @@
                     <input type="checkbox" id="remember-me">
                     <label for="remember-me">Recordar</label>
                 </div>
-                <div class="pass-link"><a href="RecordarContrasena.php">Olvido su contrasena?</a></div>
+                <div class="pass-link"><a href="RecordarContrasena.php">Olvidó su contraseña?</a></div>
             </div>
             <div class="field">
                 <input type="submit" value="Ingresar">
