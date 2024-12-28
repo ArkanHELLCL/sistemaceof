@@ -52,7 +52,7 @@
                         <li><a class="dropdown-item" href="#!">Datos</a></li>
                         <li><a class="dropdown-item" href="#!">Cambiar contraseña</a></li>
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="../inicioSesion/CerrarSesion.php">Cerrar sesión</a></li>
+                        <li><a class="dropdown-item" href="../InicioSesion/CerrarSesion.php">Cerrar sesión</a></li>
                     </ul>
                 </li>
             </ul>
