@@ -7,7 +7,8 @@ if (isset($_GET['token'])) {
     $connection = new Connection();
     $pdo = $connection->connect();
 
-    $query = "CALL `ceofdata`.`spUsuarioxTokenValidacion_Consultar`(:token);";
+    //$query = "CALL `ceofdata`.`spUsuarioxTokenValidacion_Consultar`(:token);";
+    $query = "SELECT USR.*, PER.PER_Descripcion, EMP.EMP_Descripcion FROM usuarios USR LEFT JOIN empresas EMP ON EMP.EMP_Id = USR.EMP_Id JOIN perfil PER ON PER.PER_Id = USR.PER_Id WHERE ucase(trim(USR.USR_ResetToken)) =ucase(trim(:token)) AND USR.USR_ResetTokenExpiration > now();";
     $stmt = $pdo->prepare($query);
     $stmt->execute([
         'token' => $token
@@ -34,7 +35,8 @@ if (isset($_GET['token'])) {
             $stmt->bind_param("ss", $new_password, $token);
             $stmt->execute();*/
 
-            $query = "CALL `ceofdata`.`spUsuarioContrasena_Modificar`(:usrid, :new_password);";
+            //$query = "CALL `ceofdata`.`spUsuarioContrasena_Modificar`(:usrid, :new_password);";
+            $query = "UPDATE usuarios SET USR_Clave = :new_password WHERE USR_Id = :usrid;";
             $stmt = $pdo->prepare($query);
             $stmt->execute([
                 'usrid' => $usrid,

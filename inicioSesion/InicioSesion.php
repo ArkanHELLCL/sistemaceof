@@ -6,12 +6,16 @@
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $username = $_POST['username'];
         $password = $_POST['password'];
+
+        //cambiar a myusculas
+        $username = strtoupper(trim($username));
         
         try{
             $connection = new Connection();
             $pdo = $connection->connect();
 
-            $query = "CALL `ceofdata`.`spUsuarioxLogin_Consultar`(:username);";
+            //$query = "CALL `ceofdata`.`spUsuarioxLogin_Consultar`(:username);";
+            $query = "SELECT USR.*, PER.PER_Descripcion, EMP.EMP_Descripcion FROM usuarios USR LEFT JOIN empresas EMP ON EMP.EMP_Id = USR.EMP_Id JOIN perfil PER ON PER.PER_Id = USR.PER_Id WHERE ucase(trim(USR.USR_Usuario)) =:username;";
             $stmt = $pdo->prepare($query);
             $stmt->execute([
                 'username' => $username

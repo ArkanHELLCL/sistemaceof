@@ -6,7 +6,8 @@ function generateResetToken($email) {
     $connection = new Connection();
     $pdo = $connection->connect();
 
-    $query = "CALL `ceofdata`.`spUsuarioxEmail_Consultar`(:email);";
+    //$query = "CALL `ceofdata`.`spUsuarioxEmail_Consultar`(:email);";
+    $query = "SELECT USR.*, PER.PER_Descripcion, EMP.EMP_Descripcion FROM usuarios USR LEFT JOIN empresas EMP ON EMP.EMP_Id = USR.EMP_Id JOIN perfil PER ON PER.PER_Id = USR.PER_Id WHERE ucase(trim(USR.USR_Mail)) =ucase(trim(:email));";
     $stmt = $pdo->prepare($query);
     $stmt->execute([
         'email' => $email
@@ -22,7 +23,8 @@ function generateResetToken($email) {
         /*$stmt = $conn->prepare("UPDATE usuarios SET reset_token = ?, reset_token_expiration = ? WHERE email = ?");
         $stmt->bind_param("sss", $token, $token_expiration, $email);
         $stmt->execute();*/
-        $query = "CALL `ceofdata`.`spUsuarioToken_Modificar`(:token, :token_expiration, :usrid);";
+        //$query = "CALL `ceofdata`.`spUsuarioToken_Modificar`(:token, :token_expiration, :usrid);";
+        $query = "UPDATE usuarios SET USR_ResetToken = :token, USR_ResetTokenExpiration = :token_expiration WHERE USR_Id = :usrid;";
         $stmt = $pdo->prepare($query);
         $stmt->execute([
             'token' => $token,
