@@ -24,7 +24,6 @@
         <div class="logo">
             <img src="https://sysinfo.cl/ceofconsultores/wp-content/uploads/2024/12/logo-BLANCO-400px.png">
         </div>
-
         <div class="wrapper">
             <div class="title">Inicia sesión</div>
             <form action="InicioSesion/InicioSesion.php" method="POST">
