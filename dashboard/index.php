@@ -71,7 +71,7 @@
                                 </a>
                                 <div class="collapse" id="collapseCarga" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                     <nav class="sb-sidenav-menu-nested nav">
-                                        <a class="nav-link" href="#">Subir archivo</a>
+                                        <a class="nav-link" href="#">Cargar datos</a>
                                         <a class="nav-link" href="#">Datos cargados</a>
                                         <a class="nav-link" href="#">Hisotico de cargas</a>                                        
                                     </nav>

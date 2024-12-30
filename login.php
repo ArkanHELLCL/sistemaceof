@@ -28,7 +28,7 @@
     </div>
 
     <div class="wrapper">
-        <div class="title">Inicia sesion</div>
+        <div class="title">Inicia sesión</div>
         <form action="InicioSesion/InicioSesion.php" method="POST">
             <div class="field">
                 <input type="text" required name="username">
@@ -38,11 +38,7 @@
                 <input type="password" required name="password">
                 <label>Clave</label>
             </div>
-            <div class="content">
-                <div class="checkbox">
-                    <input type="checkbox" id="remember-me">
-                    <label for="remember-me">Recordar</label>
-                </div>
+            <div class="content">                
                 <div class="pass-link"><a href="RecordarContrasena.php">Olvidó su contraseña?</a></div>
             </div>
             <div class="field">
